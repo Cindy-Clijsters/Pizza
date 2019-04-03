@@ -1,0 +1,195 @@
+@charset "utf-8";
+
+/**
+ * CH01 - Resets
+ * CH02 - Typography
+ * CH03 - Page Structure
+ * CH04 - Header & Navigation
+ * CH05 - Content & Media
+ * CH06 - Footer
+ * CH07 - Miscellaneous
+**/
+
+/* CH01 - RESETS **************************************************************/
+
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+header, main, footer, section, article, nav, div, ul {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, p {  
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -moz-margin-before: 0;
+    -moz-margin-after: 0;
+}
+
+h1, h2, h3 {
+    padding: 0.50em 0;
+    margin: 0;
+}
+
+p {
+    padding: 0.5em 0;
+}
+
+/* CH02 - TYPOGRAPHY **********************************************************/
+
+body {
+    font: 1rem Helvetica, Verdana, sans-serif;
+    color: #665950;
+    background-color: #FCFAF8;
+}
+
+.error {
+    color: red;
+    font-style: italic;
+    font-size: 0.875rem;
+}
+
+.vegetarian {
+    color: green;
+    font-style: italic;
+    font-size: 0.75rem;
+}
+
+#header-login a {
+    color: white;
+    font-weight: bold;
+}
+
+#logo a {
+    color: darkslategray;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+a {
+    color: darkslategray;
+    font-weight: bold;
+}
+
+.align-right{
+    margin-top: 1rem;
+    width: 100%;
+    text-align: right;
+}
+
+.extra-top-margin {
+    margin-top: 2rem;
+}
+
+.input-small {
+    width: 8rem;
+}
+
+.input-medium {
+    width: 25rem;
+}
+
+.input-large {
+    width: 50rem;
+}
+
+
+/* CH03 - Page Structure ******************************************************/
+
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
+}
+
+#pizza-menu, #register, #login, #my-order, #shopping-basket {
+    margin-bottom: 2rem;
+}
+
+#delivery-time, #delivery-address, #remarks {
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 480px) {
+    
+    #menu {
+        padding-bottom: 0;
+    }
+    
+}
+
+/* CH04 - Header & Navigation *************************************************/
+
+#logo {
+    display: block;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#header-login {
+    background-color: darkslategray;
+    color: white;
+    text-align: right;
+    padding: 0.5rem 0 0.375rem 0;
+}
+
+.addMinImage {
+    width: 1rem;
+}
+
+
+/* CH05 - Content & Media *****************************************************/
+
+.pizzaImage {
+    width: 7em;
+}
+
+
+
+th {
+    text-align: left;
+}
+
+td {
+    vertical-align: top;
+    padding: 0.25rem;
+}
+
+th, td {
+    padding-right: 0.75rem;
+}
+
+th.number, td.number {
+    text-align: right;
+}
+
+.border-bottom-gray {
+    border-bottom: solid 1px darkslategray;
+}
+
+/* CH06 - Footer **************************************************************/
+
+
+/* CH07 - Miscellaneous *******************************************************/
+
+/* Clear fix hack */
+
+.cf:before, .cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
